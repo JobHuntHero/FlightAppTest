@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Objects;
 
 public class AccountPage extends CommonMethods {
-
     Faker faker = new Faker();
     String userName="";
     String userLastName="";
@@ -23,9 +22,9 @@ public class AccountPage extends CommonMethods {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(partialLinkText = "Sign")
+    @FindBy(partialLinkText = "Signup")
     private WebElement signUpButton;
-    @FindBy(xpath = "//h1[contains(text(),'Sign Up')]")
+    @FindBy(xpath = "//a[contains(text(),'Signup')]")
     private WebElement signUpText;
     @FindBy(css = "input[name='userFirstName']")
     private WebElement firstName;
@@ -146,10 +145,5 @@ public class AccountPage extends CommonMethods {
     public String getUserLastName(){
         return userLastName;
     }
-
-
-
-
-
 
 }

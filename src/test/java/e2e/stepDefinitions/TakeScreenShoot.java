@@ -8,9 +8,8 @@ public class TakeScreenShoot extends CommonMethods {
 
     @Given("User navigates to website")
     public void user_navigates_to_website() {
-
-
     }
+
     @Then("User take screenshoot of the website")
     public void user_take_screenshoot_of_the_website() {
 

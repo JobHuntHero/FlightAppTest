@@ -7,11 +7,9 @@ import io.cucumber.java.en.When;
 
 public class Account_SignUp_API extends CommonMethods {
 
-
     @Given("User add request Payload")
     public void user_add_request_payload() {
         api.setAPIBody();
-
     }
     @When("User send request")
     public void user_send_request() {

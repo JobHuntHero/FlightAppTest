@@ -14,7 +14,6 @@ import org.testng.Assert;
 import static io.restassured.RestAssured.given;
 
 public class APIWorkflow extends CommonMethods {
-
     Faker faker = new Faker();
     AccountPage accountPage = new AccountPage();
     String userName="";
@@ -24,7 +23,6 @@ public class APIWorkflow extends CommonMethods {
     String userPassword="Password1";
     String userGender="";
     String userImage="";
-
     RequestSpecification requestSpecification;
     Response response;
 

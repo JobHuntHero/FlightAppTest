@@ -15,14 +15,6 @@ public class HomePage extends CommonMethods {
     @FindBy(id = "dropdownMenuLink")
     private WebElement accountName;
 
-
-
-
-
-
-
-
-
     public String getTitle(){
         return driver.getTitle();
     }
