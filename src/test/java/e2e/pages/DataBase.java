@@ -2,8 +2,6 @@ package e2e.pages;
 
 import e2e.utils.CommonMethods;
 import e2e.utils.DBUtils;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 

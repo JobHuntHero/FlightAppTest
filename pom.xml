@@ -116,16 +116,6 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0-M7</version>
-                <configuration>
-                    <includes>
-                        <include>e2e/runner/RunnerClass.java</include>
-                    </includes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.4.2</version>
                 <configuration>
@@ -134,19 +124,6 @@
                     </includes>
                 </configuration>
             </plugin>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.4.2</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.junit.platform</groupId>
-                        <artifactId>junit-platform-surefire-provider</artifactId>
-                        <version>1.0.0</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-
         </plugins>
     </build>
-
 </project>
