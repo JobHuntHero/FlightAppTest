@@ -5,7 +5,6 @@ import io.cucumber.java.en.Then;
 
 public class Account_Login extends CommonMethods {
 
-
     @Then("click login button")
     public void click_login_button() {
         accountPage.setClickLoginOnHeader();

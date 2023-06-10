@@ -11,11 +11,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DataBase extends CommonMethods {
-
     public DataBase(){
         PageFactory.initElements(driver,this);
     }
-
     public void verifyDB() throws SQLException {
         DBUtils.createDBConnection();
         ResultSet resultSet= DBUtils.runQuery("select * from users");
@@ -37,6 +35,5 @@ public class DataBase extends CommonMethods {
         Assert.assertEquals(accountPage.getUserLastName(),verifyLastName);
         Assert.assertEquals(accountPage.getUserPhoneNumber(),verifyPhoneNumber);
         DBUtils.closeDatabase();
-
     }
 }

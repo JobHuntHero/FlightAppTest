@@ -18,8 +18,8 @@ public class Account_SignUp extends CommonMethods {
     }
     @Then("User clicks signup button and verifies signup page header as {string}")
     public void user_clicks_signup_button_and_verifies_signup_page_header_as(String actualSignUpHeaderTitle) {
-         // accountPage.setSignUpButton();
-          Assert.assertEquals(actualSignUpHeaderTitle,accountPage.setSignUpText());
+          accountPage.setSignUp();
+          Assert.assertEquals(accountPage.setSignUpText(), actualSignUpHeaderTitle);
     }
     @Then("User fill up signup form")
     public void user_fill_up_signup_form() {
